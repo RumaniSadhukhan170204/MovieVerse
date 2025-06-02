@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieVerse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+<div class="theme-switch-wrapper">
+  <label>
+    <input type="checkbox" id="theme-switch" />
+    <span class="switch-label">Toggle Theme</span>
+  </label>
+</div>
+
+
+
+
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">MovieVerse</span>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+<section id="intro" class="intro">
+  <div class="intro-left">
+    <h1>MovieVerse</h1>
+    <p>Your gateway to cinematic wonder.</p>
+    <a href="#trending" class="btn">Explore Trending Movies</a>
+  </div>
+  <div class="intro-right">
+    
+    <svg class="intro-movie-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="200" height="200">
+      <g>
+        <rect x="6" y="16" width="52" height="36" rx="3" fill="#212121" />
+        <path d="M6 22H58" stroke="#e53935" stroke-width="2"/>
+        <path d="M10 16l4 6M18 16l4 6M26 16l4 6M34 16l4 6M42 16l4 6M50 16l4 6" stroke="#e53935" stroke-width="2">
+          <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+        <text x="32" y="40" fill="#ffffff" font-size="6" font-family="Arial" text-anchor="middle">NOW SHOWING</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+
+  <section id="trending" class="trending">
+  <h2>Trending Movies</h2>
+  <p class="subtitle">Top picks from this week’s cinematic favorites</p>
+
+  <div class="movie-grid">
+    <div class="movie">
+      <div class="poster-container">
+        <img src="interstellar.png" alt="Interstellar">
+        <a href="https://www.paramountplus.com/movies/interstellar/" target="_blank" class="watch-now">▶ Watch Now</a>
+      </div>
+      <div class="caption">
+        <h3>Interstellar</h3>
+        <p>A space mission to save humanity.</p>
+      </div>
+    </div>
+
+    <div class="movie">
+      <div class="poster-container">
+        <img src="mission-impossible.png" alt="Mission Impossible Fallout">
+        <a href="https://www.paramountplus.com/movies/mission-impossible-fallout/" target="_blank" class="watch-now">▶ Watch Now</a>
+      </div>
+      <div class="caption">
+        <h3>Mission: Impossible</h3>
+        <p>Ethan Hunt saves the world again.</p>
+      </div>
+    </div>
+
+    <div class="movie">
+      <div class="poster-container">
+        <img src="inception.png" alt="Inception">
+        <a href="https://www.netflix.com/title/70131314" target="_blank" class="watch-now">▶ Watch Now</a>
+      </div>
+      <div class="caption">
+        <h3>Inception</h3>
+        <p>Dreams within dreams.</p>
+      </div>
+    </div>
+
+    <div class="movie">
+      <div class="poster-container">
+        <img src="avengers.png" alt="Avengers Endgame">
+        <a href="https://www.disneyplus.com/movies/avengers-endgame/iwWDZmFqU6wP" target="_blank" class="watch-now">▶ Watch Now</a>
+      </div>
+      <div class="caption">
+        <h3>Avengers: Endgame</h3>
+        <p>The final battle to save Earth.</p>
+      </div>
+    </div>
+
+    <div class="movie">
+      <div class="poster-container">
+        <img src="call me by your name.png" alt="Call Me By Your Name">
+        <a href="https://www.netflix.com/title/80169498" target="_blank" class="watch-now">▶ Watch Now</a>
+      </div>
+      <div class="caption">
+        <h3>Call Me By Your Name</h3>
+        <p>A summer of love and longing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="popular" class="section popular-section">
+  <h2 style="font-weight: bold; border-bottom: 2px solid black;">Popular Shows</h2>
+  <p class="subtitle">Fan favorites from around the world</p>
+
+  <div class="popular-grid">
+   
+    <div class="show-card">
+      <div class="image-wrapper">
+        <img src="friends.png" alt="Friends" class="show-img" />
+        <div class="overlay">
+          <a href="https://www.netflix.com/watch/70153404" target="_blank">
+            <span class="play-btn">▶ Watch Now</span>
+          </a>
+        </div>
+      </div>
+      <div class="show-details">
+        <h3>Friends</h3>
+        <p><strong>Genre:</strong> Comedy</p>
+        <p><strong>Seasons:</strong> 10 | <strong>Episodes:</strong> 236</p>
+        <p class="synopsis">Six friends navigate life, love, and hilarious mishaps in New York City.</p>
+        <a href="#modal-friends" class="learn-more">Learn More</a>
+      </div>
+    </div>
+
+    <div class="show-card">
+      <div class="image-wrapper">
+        <img src="office.png" alt="The Office" class="show-img" />
+        <div class="overlay">
+          <a href="https://www.netflix.com/watch/70105212" target="_blank">
+            <span class="play-btn">▶ Watch Now</span>
+          </a>
+        </div>
+      </div>
+      <div class="show-details">
+        <h3>The Office</h3>
+        <p><strong>Genre:</strong> Comedy</p>
+        <p><strong>Seasons:</strong> 9 | <strong>Episodes:</strong> 201</p>
+        <p class="synopsis">A mockumentary on office workers in Scranton, Pennsylvania, filled with laughs.</p>
+        <a href="#modal-office" class="learn-more">Learn More</a>
+      </div>
+    </div>
+
+    <div class="show-card">
+      <div class="image-wrapper">
+        <img src="breakingbad.png" alt="Breaking Bad" class="show-img" />
+        <div class="overlay">
+          <a href="https://www.netflix.com/watch/70236428" target="_blank">
+            <span class="play-btn">▶ Watch Now</span>
+          </a>
+        </div>
+      </div>
+      <div class="show-details">
+        <h3>Breaking Bad</h3>
+        <p><strong>Genre:</strong> Crime, Drama</p>
+        <p><strong>Seasons:</strong> 5 | <strong>Episodes:</strong> 62</p>
+        <p class="synopsis">A chemistry teacher turns to making meth to secure his family’s future.</p>
+        <a href="#modal-breaking" class="learn-more">Learn More</a>
+      </div>
+    </div>
+
+    <div class="show-card">
+      <div class="image-wrapper">
+        <img src="dark.png" alt="Dark" class="show-img" />
+        <div class="overlay">
+          <a href="https://www.netflix.com/watch/80114792" target="_blank">
+            <span class="play-btn">▶ Watch Now</span>
+          </a>
+        </div>
+      </div>
+      <div class="show-details">
+        <h3>Dark</h3>
+        <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+        <p><strong>Seasons:</strong> 3 | <strong>Episodes:</strong> 26</p>
+        <p class="synopsis">A German town reveals time travel and family secrets across generations.</p>
+        <a href="#modal-dark" class="learn-more">Learn More</a>
+      </div>
+    </div>
+
+    <div class="show-card">
+      <div class="image-wrapper">
+        <img src="peakyblinders.png" alt="Peaky Blinders" class="show-img" />
+        <div class="overlay">
+          <a href="https://www.netflix.com/watch/80082818" target="_blank">
+            <span class="play-btn">▶ Watch Now</span>
+          </a>
+        </div>
+      </div>
+      <div class="show-details">
+        <h3>Peaky Blinders</h3>
+        <p><strong>Genre:</strong> Crime, Drama</p>
+        <p><strong>Seasons:</strong> 6 | <strong>Episodes:</strong> 36</p>
+        <p class="synopsis">A gangster family’s rise to power in post-WWI Birmingham, England.</p>
+        <a href="#modal-peaky" class="learn-more">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALS -->
+  <div id="modal-friends" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Friends - Detailed Info</h3>
+      <p><strong>Cast:</strong> Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer</p>
+      <p><strong>Creators:</strong> David Crane, Marta Kauffman</p>
+      <p><strong>Details:</strong> One of the most iconic sitcoms of all time with an enduring fanbase.</p>
+    </div>
+  </div>
+
+  <div id="modal-office" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>The Office - Detailed Info</h3>
+      <p><strong>Cast:</strong> Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer, B.J. Novak</p>
+      <p><strong>Creators:</strong> Greg Daniels</p>
+      <p><strong>Details:</strong> A satirical take on office life with heartfelt and hilarious moments.</p>
+    </div>
+  </div>
+
+  <div id="modal-breaking" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Breaking Bad - Detailed Info</h3>
+      <p><strong>Cast:</strong> Bryan Cranston, Aaron Paul, Anna Gunn, Dean Norris, Betsy Brandt</p>
+      <p><strong>Creator:</strong> Vince Gilligan</p>
+      <p><strong>Details:</strong> A gripping story of transformation, survival, and moral decay.</p>
+    </div>
+  </div>
+
+  <div id="modal-dark" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Dark - Detailed Info</h3>
+      <p><strong>Cast:</strong> Louis Hofmann, Maja Schöne, Karoline Eichhorn, Jördis Triebel</p>
+      <p><strong>Creators:</strong> Baran bo Odar, Jantje Friese</p>
+      <p><strong>Details:</strong> A complex and thrilling sci-fi mystery exploring time loops and fate.</p>
+    </div>
+  </div>
+
+  <div id="modal-peaky" class="modal">
+    <div class="modal-content">
+      <a href="#popular" class="close">&times;</a>
+      <h3>Peaky Blinders - Detailed Info</h3>
+      <p><strong>Cast:</strong> Cillian Murphy, Paul Anderson, Helen McCrory, Sophie Rundle, Tom Hardy</p>
+      <p><strong>Creator:</strong> Steven Knight</p>
+      <p><strong>Details:</strong> Stylish and gritty series portraying ambition, loyalty, and power struggles.</p>
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2>User Reviews</h2>
+    <p class="subtitle">What our users say about us</p>
+
+    <div class="reviews-wrapper">
+      
+      <div class="review-cards">
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jane Doe" />
+          <h4>Jane Doe</h4>
+          <p>"Loved the recommendations! The site is super easy to use."</p>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John Smith" />
+          <h4>John Smith</h4>
+          <p>"Great content and very helpful. Highly recommend!"</p>
+        </div>
+        <div class="review-card">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Emily Clark" />
+          <h4>Emily Clark</h4>
+          <p>"A seamless experience from start to finish. Five stars."</p>
+        </div>
+      </div>
+
+      
+      <div class="review-form">
+        <h3>Submit Your Review</h3>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Your review" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="https://example.com/terms" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+      <a href="https://example.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+  <button class="top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑ Back to Top</button>
+</footer>
+
+
+</body>
+</html>
+
+
